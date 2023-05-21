@@ -1,0 +1,182 @@
+body{
+    font: normal small Arial, Helvetica, sans-serif;
+    color: #010101;
+    text-align:justify;
+    font-size:13px;
+    margin-left: 20px;
+    background-color:#272C32;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+    }
+
+    h1 {
+      color: #FFF;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #EEE;
+      font-size: 14px;
+      text-align: center;
+      padding: 0 20px;
+    }
+/* DIV HEADER */
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  #scrollToTopButton.show {
+    opacity: 1;
+  }
+  
+.title :hover {
+    color: #951E2B;
+}
+.gambar {
+    width: 200px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Atur warna latar belakang container besar */
+  background-color: #272C32;
+  margin-left: none;
+}
+ .gambar1 {
+    padding-top: 50px;
+}
+.tombol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0.1em;
+    background-color: 	#272C32;
+    border-radius: 10px;
+}
+.tombol1 {
+    line-height: 52px;
+    height: 60px;
+    width: 188px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: none;
+    background-color: #272C32;
+    text-align: center;
+    border-radius: 10px;
+    margin: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tombol1:hover {
+    background-color: #636D78;
+    color: white;
+    transform: scaleX(1.1);
+}
+  
+  
+/* DIV BODY */
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    font-family: 'Gloria Hallelujah';
+}
+.subbody {
+    max-width: 100%;
+
+  }
+.garis {
+    display: inline-block;
+    border-radius: 10px;
+}
+.main-body {
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+.main-body:hover {
+    transform: scale(1.05);
+  }
+.main-body.fade-in {
+    opacity: 1;
+  }
+.gambar2 {
+    margin-top: 10px;
+    background-color:#585F65 ;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex ;
+    align-items: center ;
+    gap: 2em;
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+.gambar2:hover {
+    transform: scale(1.05);
+  }
+.fade-in {
+    opacity: 1;
+  }
+.candi1 {
+    width: 400px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 5px;
+}
+.banner {
+    margin-left: 40px;
+    height: 100%;
+    border-radius: 10px;
+}
+.container {
+  width: 400px;
+  height: 200px;
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 100px;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.expanded {
+  width: 700px;
+  height: 500px;
+}
+.jobdesk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* DIV FOOTER */
+.footer {
+    flex-direction: row;
+    display: flex;
+    align-items: CENTER;
+    justify-content: center;
+    background-color:#1A1D22 ;
+    color: whitesmoke;
+    border-radius: 10px;
+}

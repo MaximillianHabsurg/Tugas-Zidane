@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <title>VT Candi Sari</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <head>
+<title>Cars Website</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- /* DIV HEADER /* -->
+    <div class="header">
+        <a href="cover.html"><div  class="title">
+            <a href="cover.html"><img style="margin-right: 100px;width:1800px;" src="Image/Tour Candi Sari.png" alt=""></a>
+        </div></a>
+        <!-- <div class="Logo_uny"><img class ="gambar" src="Image/uny.jpg.png" alt=""></div> -->
+        <!-- <div class="gambar1"><img class ="gambar" src="Image/Candi Sari Wikipedia No BG copy.png" alt=""></div> -->
+        <!-- <div class="gambar1"><img class ="gambar" src="Image/MBKM.JPG.png" alt=""></div> -->
+    </div>
+    <div class="tombol">
+      <a href="index2.html"><div style="color: white;" class="tombol1">Homepage</div></a>
+      <a href="sejarah.html"><div style="color: white;" class="tombol1">Sejarah</div></a>
+      <a href="../360/index.htm"><div style="color: white;" class="tombol1">Virtual Tour</div></a>
+      <a href="About us.html"><div style="color: white;" class="tombol1">About Us</div></a>
+    </div>
+      <a id="scrollToTopButton" href="#"><img style="width :50px;"src="Image/nTXEGBLTB-2257311251.png" alt=""><i class="fas fa-arrow-up"></i></a>
+        <!-- /* DIV BODY */ -->
+            <div class="jobdesk">
+                <div style="margin-bottom: 50px;">
+                    <div  id="container0" class="container" onclick="expandContainer('container0')">     
+                        <div><img style="max-width: 100px;" src="Image/kouchou_sensei_speech.png" alt="GD"></div>   
+                        <div>
+                        <h1>Dosen Pengamppu</h1></div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;align-items: center;justify-content: center;">
+                <!--Graphic Designer-->
+                <div  id="container1" class="container" onclick="expandContainer('container1')">     
+                    <div><img style="max-width: 100px;" src="Image/job_programmer.png" alt="GD"></div>   
+                    <div>
+                    <h1>Graphic Designer</h1></div>
+                </div>
+                <!-- Tim Kreatif -->
+                <div  id="container2" class="container" onclick="expandContainer('container2')">     
+                    <div><img style="max-width: 100px;" src="Image/camera_cat.png" alt="GD"></div>   
+                    <div>
+                    <h1>Creative Team</h1></div>
+                </div>
+                <!-- Tim Lapangan -->
+                <div  id="container3" class="container" onclick="expandContainer('container3')">     
+                    <div><img style="max-width: 100px;" src="Image/slump_good_write_woman.png" alt="GD"></div>   
+                    <div>
+                    <h1>Field Officers</h1></div>
+                </div>
+                </div>
+            </div>
+<!-- SCRIPT BODY -->
+<script>
+    var isExpanded = {
+      container0: false,
+      container1: false,
+      container2: false,
+      container3: false
+    };
+
+    var originalContent = {};
+
+    function expandContainer(containerId) {
+      var container = document.getElementById(containerId);
+
+      if (!isExpanded[containerId]) {
+        container.classList.add("expanded");
+        originalContent[containerId] = container.innerHTML;
+        if (containerId === "container0") {
+          container.innerHTML = "<h1>Dosen Pengampu</h1><p>Project ini dipimpin oleh Bapak Septian Teguh M.pd dan Bapak Alifi M.Pd. selaku Dosen Prodi Pendidikan Sjearah yang mengampu mata kuliah hypermedia pembelajaran sejarah<p>";
+        } else if (containerId === "container1") {
+          container.innerHTML = "<h1>Detail Graphic Designer</h1><p>Graphic Designer bertugas untuk mengedit video dan/atau foto 360 yang telah ditake, membuat website, dan mengoploadnya.</p><br><p>Tim Terdiri dari Rizky, Uko, Jagad,";
+        } else if (containerId === "container2") {
+          container.innerHTML = "<h1>Detail Tim Kreatif</h1><p>Tim kreatif adalah kelompok orang yang terdiri dari berbagai ahli kreatif seperti script writer dan content planner. Mereka bekerja bersama untuk menghasilkan ide-ide baru dan inovatif dalam menciptakan konten visual, konsep iklan, dan solusi desain yang menarik.</p><br><p style='font-weight: bold;'>Tim terdiri dari</p><p>1.  Putri Intan Dwi Cahyani 20406241020 <br> 2. Revina Trie Ramadani 20406241024 <br> 3. Farrah Azizah 20406241025 <br> 4. Alfan Kusmantono 20406241026 <br> 5. Endah Pranandari 20406241046 <br> 6. Diah Puspita Anggraeni 20406241047 <br> 7. Rohmawati 20406241049<br>  8. Nadinda Ramadhanti R 20406241053 <br> 9. Afrida Amalia 20406244003 <br> 10. Dinda Sherli Gusthalia 20406244019 <br> 11. Sausan Nafisah 20406244020 <br> 12. Arya Muhammad Yusuf 20406244036</p>";
+        } else if (containerId === "container3") {
+          container.innerHTML = "<h1>Detail Tim Lapangan</h1><p>Tim lapangan adalah kelompok profesional yang bertanggung jawab untuk melaksanakan tugas-tugas di luar ruangan terkait dengan proyek atau kegiatan tertentu. Mereka dapat terlibat dalam survei lokasi, pemotretan, dokumentasi, atau penelitian lapangan lainnya yang mendukung proses kreatif dan desain.</p>";
+        }
+        isExpanded[containerId] = true;
+      } else {
+        container.classList.remove("expanded");
+        container.innerHTML = originalContent[containerId];
+        isExpanded[containerId] = false;
+      }
+    }
+  </script>
+        <!-- DIV FOOTER -->
+        <div class="footer">
+            <div style="margin: 10px;">Designed By : <a href="About us.html">Editing Team</a></div>
+            <div style="margin: 10px;"><a href="">Copy Right</a></div>
+            <div style="margin: 10px;"><a href="About us.html"> Dosen Pengampu</a></div>
+        </div>
+<!-- Java Script -->
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var gambar2 = document.querySelector('.gambar2');
+      setTimeout(function() {
+        gambar2.style.opacity = 1;
+      }, 100); // Sesuaikan timeout sesuai dengan waktu yang diinginkan
+    });
+  </script>
+</body>
+</html>
